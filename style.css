@@ -1,3 +1,16 @@
 .character{
-    width: 200px;
+    width: 300px;
+}
+
+p{
+    border-bottom: 1px solid rgb(180, 173, 173);
+    width: 500px;
+  }
+
+.line{
+    display: flex;
+}
+
+.todo_line{
+    justify-content: space-between;
 }
