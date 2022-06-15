@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>todo_list</title>
+  <title>TODOLIST</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -16,22 +16,21 @@
 
 <body>
   <header>
-    <div class="wrapper">TODOLIST</div>
+    <h1>TODOLIST</h1>
     <form>
-        <input type="text" id="character_input" class="character">
-        <button type="button" id="register" class="todo_register">登録</button>
+        <input type="text" class="task_value">
+        <button type="button" class="task_submit">登録</button>
     </form>
     <div id="list">
         <div class="line">
-          <p>·<button type="button" id="line_one" class="todo_line">削除</button></p>
-          <p>·</p>
-          <p>·</p>
-          <p>·</p>
-          <p>·</p>
+          <h2>Current Tasks</h2>
+          <ul class="task_list"></ul>
         </div>
     </div>
   </header>
 
+
+          <!-- <p>·<button type="button" id="line_one" class="todo_line">削除</button></p>-->
   <script src="script.js"></script>
 </body>
 </html>
