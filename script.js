@@ -8,7 +8,6 @@ $(function () {
     );
     count++;
   });
-
   //   $(document).on("click", ".delete", function () {
   //     console.log("aaa");
   //     console.log($(this).parent());
