@@ -23,11 +23,10 @@ $(function () {
   //   console.log("hoge");
   // });
   $(document).on("click", ".completion_button", function () {
-    console.log($(".completion_button").parent());
-    // let delete_btn =
-    //   '<button class="delete">削除</button> <button class="completion_button">完了</button>';
-    // $("#completion_list ").append(
-    //   "<li data-count=" + count + ">" + delete_btn + "</li>"
-    // );
+    $("#completion_list").append(
+      "<li data-count=" + count + ">" + $(this).parent() + "</li>"
+    );
+    console.log($(this).parent());
+    $(this).parent().remove();
   });
 });
