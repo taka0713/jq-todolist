@@ -23,12 +23,35 @@
       <form>
         <input type="text" class="task_value" id="task" />
         <button type="button" class="task_submit" id="register">登録</button>
+        <button type="button" class="dai_submit" id="dai_register">ダイ</button>
+        <button type="button" class="taka_submit" id="taka_register">
+          タカ
+        </button>
       </form>
       <div id="list">
         <div class="line">
           <h2>Current Tasks</h2>
           <ul class="task_list" id="task_list">
-            <li>hoge<button class="delete">削除</button></li>
+            <li>
+              hoge
+              <button class="delete">削除</button>
+              <button class="completion_button" id="completion_button">
+                完了
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="completion">
+        <div class="completion">
+          <h2>
+            Completion Tasks
+            <button type="button" class="first_time" id="reset">
+              リセット
+            </button>
+          </h2>
+          <ul class="completion_list" id="completion_list">
+            <li>fuga</li>
           </ul>
         </div>
       </div>
