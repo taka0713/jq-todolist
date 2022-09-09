@@ -18,6 +18,7 @@ $(function () {
 
   $(document).on("click", ".delete", function () {
     $(this).parent().remove();
+    console.log($(this).parent());
   });
   // $(".delete").on("click", function () {
   //   console.log("hoge");
@@ -26,7 +27,7 @@ $(function () {
     $("#completion_list").append(
       "<li data-count=" + count + ">" + $(this).parent() + "</li>"
     );
-    console.log($(this).parent());
+
     $(this).parent().remove();
   });
 });

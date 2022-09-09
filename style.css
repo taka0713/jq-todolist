@@ -9,14 +9,14 @@ p {
 
 #list {
   background-color: papayawhip;
-  width: 70%;
+  width: 60%;
   height: 400px;
   display: flex;
 }
 
 #completion {
   background-color: rgb(95, 158, 54);
-  width: 70%;
+  width: 60%;
   height: 400px;
   display: flex;
 }
