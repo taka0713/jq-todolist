@@ -20,9 +20,11 @@ $(function () {
     $(this).parent().remove();
     console.log($(this).parent());
   });
+
   // $(".delete").on("click", function () {
   //   console.log("hoge");
   // });
+
   $(document).on("click", ".completion_button", function () {
     $("#completion_list").append(
       "<li data-count=" + count + ">" + $(this).parent() + "</li>"
