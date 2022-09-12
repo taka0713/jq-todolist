@@ -26,9 +26,13 @@ $(function () {
   // });
   $(document).on("click", ".completion_button", function () {
     $("#completion_list").append(
-      "<li data-count=" + count + ">" + $(this).parent() + "</li>"
+      "<li data-count=" +
+        count +
+        ">" +
+        // $(this).parent().text().split("\n")[1].trim() +
+        "</li>"
     );
-
+    console.log($(this).parent().text().split("\n")[0]);
     $(this).parent().remove();
   });
 });
