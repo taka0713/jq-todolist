@@ -24,6 +24,7 @@ $(function () {
   // $(".delete").on("click", function () {
   //   console.log("hoge");
   // });
+
   $(document).on("click", ".completion_button", function () {
     $("#completion_list").append(
       "<li data-count=" +
@@ -32,7 +33,7 @@ $(function () {
         // $(this).parent().text().split("\n")[1].trim() +
         "</li>"
     );
-    console.log($(this).parent().text().split("\n")[0]);
+    console.log($(this).parent().text().split("\n")[0].trim());
     $(this).parent().remove();
   });
 });
