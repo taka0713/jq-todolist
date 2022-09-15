@@ -18,21 +18,41 @@ $(function () {
 
   $(document).on("click", ".delete", function () {
     $(this).parent().remove();
-    console.log($(this).parent());
   });
 
   // $(".delete").on("click", function () {
   //   console.log("hoge");
   // });
   $(document).on("click", ".completion_button", function () {
+    let back_btn =
+      '<button class="delete">削除</button> <button class="return_button">戻す</button>';
     $("#completion_list").append(
       "<li data-count=" +
         count +
         ">" +
-        $(this).parent().text().split("\n")[1].trim() +
+        $(this).parent().text().split("\n")[0].replace("削除 完了", "") +
+        back_btn +
         "</li>"
     );
-    console.log($(this).parent().text().split("\n")[0].trim());
+    console.log(
+      $(this).parent().text().split("\n")[0].replace("削除 完了", "")
+    );
     $(this).parent().remove();
+  });
+  $(document).on("click", ".return_button", function () {
+    delete_btn =
+      '<button class="delete">削除</button> <button class="completion_button">完了</button>';
+    $("#task_list").append(
+      "<li data-count=" +
+        count +
+        ">" +
+        $(this).parent().text().split("\n")[0].replace("削除 戻す", "") +
+        delete_btn +
+        "</li>"
+    );
+    $(this).parent().remove();
+  });
+  $("#reset").on("click", function () {
+    $(".completion_list").children().remove();
   });
 });
