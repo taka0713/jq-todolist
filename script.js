@@ -4,18 +4,23 @@ $(function () {
     let delete_btn =
       '<button class="delete">削除</button> <button class="completion_button">完了</button>';
     let do_name = $("#name_select").val();
-    if (task.match(/^( |　)*$/)) {
-      alert("登録できません。");
-    } else {
-      $("#task_list").append(
-        "<li>" + "[" + do_name + "]" + task + delete_btn + "</li>"
-      );
-
-      $("#task").val("");
-    }
+    $("#task_list").append("<li>" + "[" + do_name + "]");
   });
 });
-
+// $("#register").on("click", function () {
+//   const task = $("#task").val();
+//   let delete_btn =
+//     '<button class="delete">削除</button> <button class="completion_button">完了</button>';
+//   let do_name = $("#name_select").val();
+//   if (task.match(/^( |　)*$/)) {
+//     alert("登録できません。");
+//   } else {
+//     $("#task_list").append(
+//       "<li>" + "[" + do_name + "]" + task + delete_btn + "</li>"
+//     );
+//     $("#task").val("");
+//   }
+// });
 // $(document).on("click", ".delete", function () {
 //   $(this).parent().remove();
 // });
