@@ -4,7 +4,20 @@ $(function () {
     let delete_btn =
       '<button class="delete">削除</button> <button class="completion_button">完了</button>';
     let do_name = $("#name_select").val();
-    $("#task_list").append("<li>" + "[" + do_name + "]");
+    $("#task_list").append(
+      "<li>" + "[" + do_name + "]" + task + delete_btn + "</li>"
+    );
+    $("#task").val("");
+  });
+
+  $(document).on("click", ".delete", function () {
+    $(this).parent().remove();
+  });
+
+  $(document).on("click", ".completion_button", function () {
+    let back_btn =
+      '<button class="delete">削除</button> <button class="return_button">戻す</button>';
+    $("#completion_list").append("<li>" + "</li>");
   });
 });
 
