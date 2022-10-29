@@ -7,6 +7,7 @@ $(function () {
     $("#task_list").append("<li>" + "[" + do_name + "]");
   });
 });
+
 // $("#register").on("click", function () {
 //   const task = $("#task").val();
 //   let delete_btn =
