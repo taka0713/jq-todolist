@@ -17,7 +17,7 @@ $(function () {
   $(document).on("click", ".completion_button", function () {
     let back_btn =
       '<button class="delete">削除</button> <button class="return_button">戻す</button>';
-    $("#completion_list").append("<li>" + $("""") + "</li>");
+    $("#completion_list").append("<li>" + $() + "</li>");
   });
 });
 
